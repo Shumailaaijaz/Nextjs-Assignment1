@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.box {
+  text-transform: uppercase;
+  color:cornflowerblue;
+  font-family:'Times New Roman', Times, serif ;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline;
+  background: 
+    repeating-radial-gradient(#bed0f1 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
+    repeating-conic-gradient(#05f89b 0 0.0001%,#fff 0 0.0002%) 50% 50%/2500px 2500px;
+  background-blend-mode: difference;
+  mix-blend-mode: lighten;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+
+body {
+  margin: 0;
+  min-height: 80vh;
+  display: grid;
+  place-content: center;
+  background: #ddf5e8;
+}
+
+html {
+  background: #fff;
+}
+
+
+
+:root {
+  --color-background: #fa05bd;
+  --stroke-width: calc(1em / 16);
+  --font-size: 30vmin;
+  --font-weight: 700;
+  --letter-spacing: calc(1em / 8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.h1 {
+  font-size: 20px;
+  background-clip: text;
+  background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+  color: var(--color-background);
+  font-size: 20px;
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
+  padding: calc(--stroke-width / 2);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: var(--stroke-width);
+}
